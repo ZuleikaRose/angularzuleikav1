@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body * {
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+$main: #232f3e;
+
+.bg-main {
+  background-color:$main;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ffc107;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  min-height: 600px;
+}
+
+
+
+
