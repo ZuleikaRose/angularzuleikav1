@@ -1,5 +1,5 @@
 # angularzuleikav1
-MEAN stack Amazon Clone website that includes AWS (IAM, S3, & public bucket), Algolia, Angular, Express, MongoDB (MLab), Node, Stripe (Checkout), TypeScript
+MEAN stack Amazon Clone website that includes AWS (IAM, S3, & public bucket), Algolia, Angular, Express, MongoDB (MLab), Node, Postman, Stripe (Checkout), TypeScript
 
 This project was generated with Angular CLI version 1.6.5.
 Development server
