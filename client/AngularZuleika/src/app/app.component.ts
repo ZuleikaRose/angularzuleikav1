@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'AngularZuleika';
-  searchTerm = " ";
+  searchTerm = '';
   isCollapsed = true;
+
+  constructor(private router: Router) {}
 
   get token() {
     return localStorage.getItem('token');
@@ -22,7 +25,10 @@ export class AppComponent {
     dropdown.close();
   }
 
-  logout() {}
+  logout() {
+    localStorage.clear();
+    this.router.navigate(['']);
+  }
 
   search() {}
 }
