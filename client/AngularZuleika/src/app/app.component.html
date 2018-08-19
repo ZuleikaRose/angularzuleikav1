@@ -6,7 +6,7 @@
     <button class="navbar-toggler" (click)="isCollapsed = !isCollapsed">
       <span class="navbar-toggler-icon"></span>
     </button>
-       <div [ngbCollapse]="isCollapsed" style="align-items: left; margin-left: 50px;" class="collapse navbar-collapse flex-column"
+    <div [ngbCollapse]="isCollapsed" style="align-items: left; margin-left: 50px;" class="collapse navbar-collapse flex-column"
       id="navbarNav">
       <div class="input-group w-75">
         <input type="text" name="search" class="form-control" [(ngModel)]="searchTerm" (keyup.enter)="search()">
@@ -43,6 +43,8 @@
           <li class="nav-item ml-0 ml-md-2">
             <a (click)="collapse()" routerLink="/cart" routerLinkActive="active" class="nav-link">
               <i class="fa fa-shopping-cart mr-1"></i>
+              Cart
+              <span *ngIf="data.cartItems" class="badge badge-warning ml-1">{{ data.cartItems }}</span>
             </a>
           </li>
         </ul>

@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false
+  ,stripeKey: "pk_test_g9gZpu5d57MpHfVfpL1ZeuKf"
 };
 
 /*
